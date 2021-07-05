@@ -15,7 +15,17 @@
 <body>
     <script>
         function thanks() {
-            alert("Thank you for the email!!!");
+            let nameVal = document.forms["myForm"]["name"].value;
+            let emailVal = document.forms["myForm"]["email"].value;
+            let textVal = document.forms["myForm"]["textarea"].value;
+            if (nameVal == "" || emailVal == "" || textVal == "") {
+
+                alert("Pleas fill in text boxes");
+                return false;
+            }
+            else {
+                alert("Thank you for the email!!!");
+            }
         }
     </script>
     <header class="nav center">
@@ -172,7 +182,7 @@
         <h3>Contact</h3>
         <h4>Pleas feel free to contact me</h4>
 
-        <form action="https://formsubmit.co/stefferreira14@gmail.com" method="POST" class="center">
+        <form action="https://formsubmit.co/stefferreira14@gmail.com" method="POST" class="center" name="myForm">
             <br><br>
             <div class="name-forms">
                 <input type="text" name="name" id="name" autocomplete="off" required>
