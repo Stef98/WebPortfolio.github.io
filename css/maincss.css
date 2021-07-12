@@ -25,7 +25,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* navbar */
+/* 
+
+*navbar
+
+*/
 .nav {
   width: 85%;
   height: 70px;
@@ -53,7 +57,11 @@ body {
   background: var(--main-color);
   color: #000;
 }
-/* mains section */
+/* 
+
+*mains section 
+
+*/
 .main {
   width: 85%;
   height: 650px;
@@ -121,7 +129,11 @@ body {
 
   color: var(--main-color);
 }
-/* about */
+/* 
+
+*about 
+
+*/
 #profilePic {
   height: 80%;
   max-width: fit-content;
@@ -165,7 +177,39 @@ body {
   justify-content: space-between;
 }
 
-/* education */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: none;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: var(--bg);
+  color: var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* 
+
+*education 
+
+*/
 .education {
   width: 100%;
   background: #151618;
@@ -207,7 +251,11 @@ body {
   width: 100%;
 }
 
-/* experience */
+/* 
+
+*experience 
+
+*/
 .experience {
   width: 100%;
   padding: 5em 0;
@@ -245,7 +293,12 @@ body {
   margin: 0.4em 0;
 }
 
-/* projects */
+/*
+
+ *projects 
+ 
+ */
+
 .projects {
   width: 100%;
   padding: 5em 0;
@@ -292,7 +345,11 @@ body {
   background: rgba(255, 255, 255, 0.034);
 }
 
-/* contact */
+/* 
+
+*contact 
+
+*/
 .contact {
   width: 100%;
   padding: 5em 0;
@@ -505,31 +562,12 @@ button::after {
     background: var(--main-color);
   }
 }
-@media (max-width: 900px) {
-  .main img {
-    width: 30em;
-  }
-  .about .box_wrap,
-  .education .left_box,
-  .education .right_box {
-    width: 60%;
-  }
-}
-@media (max-width: 600px) {
-  .main img {
-    width: 22em;
-  }
-}
-@media (max-width: 400px) {
-  body {
-    font-size: 10px;
-  }
-  .main {
-    height: 450px;
-  }
-}
-/*********************************/
-/*Footer*/
+
+/*
+
+*Footer
+
+*/
 
 .footer {
   background-color: #151618;
@@ -546,4 +584,33 @@ button::after {
 
 .icon:hover {
   color: var(--main-color);
+}
+@media (max-width: 900px) {
+  .main img {
+    width: 30em;
+  }
+  .about .box_wrap,
+  .education .left_box,
+  .education .right_box {
+    width: 60%;
+  }
+}
+
+/*
+
+*Media
+
+*/
+@media (max-width: 600px) {
+  .main img {
+    width: 22em;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    font-size: 10px;
+  }
+  .main {
+    height: 450px;
+  }
 }
