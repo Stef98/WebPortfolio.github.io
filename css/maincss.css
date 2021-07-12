@@ -186,7 +186,7 @@ body {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 100px;
-  background-color: transparent;
+  background-color: var(--bg);
   color: var(--main-color);
   font-size: 20px;
   text-align: center;
