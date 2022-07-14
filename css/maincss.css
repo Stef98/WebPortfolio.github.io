@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Work+Sans&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-shadow: border-box;
   scroll-behavior: smooth;
 }
+
 :root {
   --font: "Montserrat", sans-serif;
   --prime-font: "Work Sans", sans-serif;
@@ -13,6 +15,7 @@
   --main-font-color: #fdfbfb;
   --sec-font-color: #fcf1f1b4;
 }
+
 body {
   background: var(--bg);
   font-family: var(--font);
@@ -20,31 +23,38 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 /* 
 
 *navbar
 
 */
 .nav {
-  width: 85%;
+  width: 98%;
   height: 70px;
-  margin: 0 auto;
+  margin: 10px 10px 10px 10px;
   justify-content: space-between;
+  position: sticky;
 }
+
 .checkBtn {
   display: none;
 }
+
 .nav .logo {
   font-size: 2em;
 }
+
 .nav ol {
   list-style: none;
 }
+
 .nav ol a {
   text-decoration: none;
   color: var(--sec-font-color);
@@ -52,11 +62,13 @@ body {
   padding: 0.5em 1.5em;
   border-radius: 10px;
 }
+
 .nav ol a:hover {
   transition: background 0.8s;
   background: var(--main-color);
   color: #000;
 }
+
 /* 
 
 *mains section 
@@ -70,6 +82,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .main::before,
 .main::after {
   content: "";
@@ -81,6 +94,7 @@ body {
   right: -10%;
   z-index: -10;
 }
+
 .main::after {
   background: #15161885;
   height: 60%;
@@ -90,15 +104,18 @@ body {
   border-right: 1px solid #4985c9;
   z-index: -11;
 }
+
 .box h1 {
   font-size: 4.5em;
   margin-bottom: 0.2em;
 }
+
 .box p {
   font-size: 1.2em;
   color: var(--sec-font-color);
   margin-bottom: 1.2em;
 }
+
 .box .btn {
   font-size: 1.2em;
   background: none;
@@ -110,25 +127,30 @@ body {
   height: 2.2em;
   transition: all 0.4s;
 }
+
 .box .btn:hover {
   background: var(--main-color);
 }
+
 .main img {
   width: 35em;
   position: absolute;
   right: 60px;
   z-index: -1;
 }
+
 .link {
   color: var(--sec-font-color);
   text-decoration: none;
   margin-left: 10px;
 }
+
 .main a:hover {
   transition: background 0.8s;
 
   color: var(--main-color);
 }
+
 /* 
 
 *about 
@@ -146,14 +168,17 @@ body {
   flex-wrap: wrap;
   align-items: start;
 }
+
 .about .box_wrap {
   margin: 2em 0;
 }
+
 .about .box_wrap .heading {
   font-size: 3em;
   margin-bottom: 0.5em;
   position: relative;
 }
+
 .about .box_wrap .heading::before {
   content: "";
   position: absolute;
@@ -164,12 +189,15 @@ body {
   background: var(--main-color);
   z-index: -1;
 }
+
 .about .box_wrap .text {
   color: var(--sec-font-color);
 }
+
 .about .box_wrap {
   width: 35%;
 }
+
 .skills_box i {
   margin-right: 0.5em;
   margin-bottom: 0.5em;
@@ -217,21 +245,27 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .education .left_box {
   width: 20%;
 }
+
 .education .left_box .container {
   margin: 2em 0;
 }
+
 .education .heading {
   font-size: 3em;
 }
+
 .education :is(h3, small, p) {
   margin: 0.5em 0;
 }
+
 .left_box .container {
   position: relative;
 }
+
 .left_box .container::before {
   content: "";
   position: absolute;
@@ -244,9 +278,11 @@ body {
 .education :is(small, p) {
   color: var(--sec-font-color);
 }
+
 .education .right_box {
   width: 40%;
 }
+
 .education .right_box img {
   width: 100%;
 }
@@ -261,12 +297,15 @@ body {
   padding: 5em 0;
   flex-direction: column;
 }
+
 .experience h3 {
   font-size: 3em;
 }
+
 .experience ul {
   list-style: none;
 }
+
 .experience ul li {
   margin: 3em 0;
   font-size: 1.5em;
@@ -275,6 +314,7 @@ body {
   cursor: pointer;
   position: relative;
 }
+
 .experience ul li::before {
   content: "";
   position: absolute;
@@ -286,9 +326,11 @@ body {
   transform: translateY(8px);
   transition: transform 0.4s;
 }
+
 .experience ul li:hover::before {
   transform: translateY(0px);
 }
+
 .experience ul li :is(small, p) {
   margin: 0.4em 0;
 }
@@ -302,24 +344,27 @@ body {
 .projects {
   width: 100%;
   padding: 5em 0;
-  background: #151618;
   flex-direction: column;
 }
+
 .projects h3 {
   font-size: 3em;
 }
+
 .projects .container {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .projects .container a {
   text-decoration: none;
   color: white;
   margin: 2em 0.8em 0 0;
   position: relative;
 }
+
 .projects .container a::before {
   content: "\f0a9";
   position: absolute;
@@ -337,13 +382,82 @@ body {
   clip-path: circle(0% at 50% 50%);
   transition: clip-path 1s;
 }
+
 .projects .container a:hover::before {
   clip-path: circle(70.7% at 50% 50%);
 }
+
 .projects .container a div {
   padding: 2em;
   background: rgba(255, 255, 255, 0.034);
 }
+
+
+/* 
+*Badges 
+
+*/
+
+.Badges {
+  width: 100%;
+  padding: 5em 0;
+  display: inline-flex;
+  background-color: #151618;
+  flex-direction: column;
+
+}
+
+.badgeLogo {
+  background-color: red;
+}
+
+.Badges h3 {
+  font-size: 3em;
+}
+
+.Badges .container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Badges .container a {
+  text-decoration: none;
+  color: white;
+  margin: 2em 0.8em 0 0;
+  position: relative;
+}
+
+.Badges .container a::before {
+  content: "\f0a9";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  background: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  clip-path: circle(0% at 50% 50%);
+  transition: clip-path 1s;
+}
+
+.Badges .container a:hover::before {
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+.Badges .container a div {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.034);
+}
+
+
+
 
 /* 
 
@@ -353,15 +467,19 @@ body {
 .contact {
   width: 100%;
   padding: 5em 0;
+  background: #151618;
   flex-direction: column;
 }
+
 .contact h3 {
   font-size: 3em;
 }
+
 .contact form {
   flex-direction: column;
   min-width: 30%;
 }
+
 .contact form :is(input, textarea, button) {
   margin: 0.8em;
   width: 100%;
@@ -373,6 +491,7 @@ body {
   box-sizing: border-box;
   padding: 0.2em 1em;
 }
+
 .contact form textarea {
   resize: none;
   height: 80px;
@@ -431,13 +550,11 @@ button::after {
   border-radius: 100%;
   filter: blur(1px);
   opacity: 0.05;
-  background-image: linear-gradient(
-    -270deg,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 20%,
-    #ffffff 80%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background-image: linear-gradient(-270deg,
+      rgba(255, 255, 255, 0) 0%,
+      #ffffff 20%,
+      #ffffff 80%,
+      rgba(255, 255, 255, 0) 100%);
 }
 
 .name-forms {
@@ -488,15 +605,15 @@ button::after {
   transition: all 0.3s ease-in-out;
 }
 
-.name-forms input:focus + .label-name .content-name,
-.name-forms input:valid + .label-name .content-name {
+.name-forms input:focus+.label-name .content-name,
+.name-forms input:valid+.label-name .content-name {
   transform: translateY(-140%);
   color: var(--main-color);
   font-size: 13px;
 }
 
-.name-forms input:focus + .label-name::after,
-.name-forms input:valid + .label-name::after {
+.name-forms input:focus+.label-name::after,
+.name-forms input:valid+.label-name::after {
   transform: translateX(0%);
 }
 
@@ -506,17 +623,21 @@ button::after {
     right: 0;
   }
 }
+
 @media (max-width: 1000px) {
   body {
     font-size: 14px;
   }
+
   .main img {
     width: 35em;
     top: 80px;
   }
+
   .main {
     align-items: flex-end;
   }
+
   .checkBtn {
     display: block;
     width: 25px;
@@ -526,6 +647,7 @@ button::after {
     appearance: none;
     -webkit-appearance: none;
   }
+
   .checkBtn::before {
     content: "\f0c9";
     font-family: "Font Awesome 5 Free";
@@ -533,9 +655,11 @@ button::after {
     font-size: 1.9em;
     color: var(--sec-font-color);
   }
+
   .checkBtn:checked::before {
     content: "\f00d";
   }
+
   .nav ol {
     position: absolute;
     width: 100%;
@@ -549,9 +673,11 @@ button::after {
     transition: clip-path 0.4s;
     background: #151618;
   }
-  .checkBtn:checked ~ ol {
+
+  .checkBtn:checked~ol {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+
   .nav ol::before {
     content: "";
     position: absolute;
@@ -574,9 +700,11 @@ button::after {
   text-align: center;
   height: 80px;
 }
+
 .footerIcons {
   padding-top: 14px;
 }
+
 .icon {
   color: whitesmoke;
   padding-right: 10px;
@@ -585,10 +713,12 @@ button::after {
 .icon:hover {
   color: var(--main-color);
 }
+
 @media (max-width: 900px) {
   .main img {
     width: 30em;
   }
+
   .about .box_wrap,
   .education .left_box,
   .education .right_box {
@@ -606,10 +736,12 @@ button::after {
     width: 22em;
   }
 }
+
 @media (max-width: 400px) {
   body {
     font-size: 10px;
   }
+
   .main {
     height: 450px;
   }
