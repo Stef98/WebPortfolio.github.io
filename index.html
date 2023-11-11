@@ -6,13 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stefan Ferreira</title>
-    <link href="css/maincss.css" rel="stylesheet" type="text/css">
+    <link href="css/main2.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/aad34b7c1b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
+    <style>
+
+    </style>
     <script>
         function thanks() {
             //form validations...
@@ -28,237 +40,387 @@
                 alert("Thank you for the email!!!");
             }
         }
+
+
     </script>
-    <header class="nav center">
-        <div id="logo"><a href="#"><img src="images/logo.png" height="60px" width="190px"></a></div>
-        <input type="checkbox" name="" class="checkBtn" />
-        <ol class="center">
-            <a href="#About">
-                <li>About</li>
-            </a>
-            <a href="#Education">
-                <li>Education</li>
-            </a>
-            <a href="#Experience">
-                <li>Experience</li>
-            </a>
-            <a href="#Badges">
-                <li>Badges</li>
-            </a>
-            <a href="#Projects">
-                <li>Projects</li>
-            </a>
-            <a href="#Contact">
-                <li>Contact</li>
-            </a>
-            <a href="Stefan_Ferreira_CV.pdf" download="StefanFerreiraCV" target="_blank">CV</a>
+    <style>
 
-        </ol>
+    </style>
 
-    </header>
-    <section class="main">
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-dark-subtle" id="sidebar">
+        <div class="py-4 px-3 mb-4">
+            <div class="media d-flex align-items-center">
 
-        <div class="box">
-            <h1>Stefan Ferreira</h1>
-            <p>Software Engineering Undergraduate </p><br><br><br><br><br>
-            <i class="fas fa-phone fa-1x"> </i><a href="tel:072 068 4774" class="link" id="phone"> 072 068
-                4774</a><br><br>
-            <i class="fas fa-envelope-open fa-1x"> </i><a href="mailto:stefferreira14@gmail.com" target="_blank"
-                class="link">
-                stefferreira14@gmail.com</a>
-        </div>
-
-        <img src="images/stefan2.jpg" alt="Stefan" id="profilePic">
-
-    </section>
-
-
-    <!-- about -->
-    <div class="about center" id="About">
-        <div class="box_wrap">
-            <p class="heading">About</p>
-            <p class="text">Hello! My name is Stefan Ferreira, and I'm a Software Engineer Undergraduate at Belgium
-                campus. I have a diverse set of skills,
-                ranging from Java, SQL, C#, HTML, CSS and javascript.</p>
-            <p class="text">I speak English and Afrikaans. I am a hard working person
-                and always willing to take on a challange. I love to go and do outdoor activities in my free time. Love
-                to go and play golf and cricket
-                with
-                friends.</p>
-        </div>
-        <div class="box_wrap">
-            <p class="heading">Skills</p>
-            <div class="skills_box"></div>
-            <div class="tooltip"><i class="fab fa-java fa-3x">&nbsp<span class="tooltiptext">Java</span> </i></div>
-            <div class="tooltip"><i class="fas fa-hashtag fa-3x"></i>&nbsp<span class="tooltiptext">C# </i></div>
-            <div class="tooltip"><i class="fab fa-html5 fa-3x">&nbsp<span class="tooltiptext">HTML</span> </i></div>
-            <div class="tooltip"><i class="fab fa-css3-alt fa-3x">&nbsp <span class="tooltiptext">CSS</span></i></div>
-            <div class="tooltip"><i class="fas fa-database fa-3x">&nbsp <span class="tooltiptext">SQL</span></i></div>
-            <div class="tooltip"><i class="fab fa-js fa-3x">&nbsp <span class="tooltiptext">Java Script</span></i></div>
-            <div class="tooltip"><i class="fab fa-node-js fa-3x">&nbsp<span class="tooltiptext">Node JS</span> </i>
-            </div>
-            <div class="tooltip"><i class="fab fa-docker fa-3x">&nbsp<span class="tooltiptext">Docker</span> </i></div>
-            <div class="tooltip"><i class="fab fa-react fa-3x">&nbsp<span class="tooltiptext">React</span> </i></div>
-
-        </div>
-    </div>
-    </div>
-
-
-    <!-- education -->
-    <div class="education center" id="Education">
-        <div class="left_box">
-            <h1 class="heading">Education</h1>
-            <div class="container">
-                <h3>Belgium Campus</h3>
-                <p>Bachelor of Computing</p>
-                <p>Learned programming in C#, Java, SQL, JavaScript, and HTMLS/CSS. Currently
-                    busy
-                    with amazon web services through AWS academy. </p>
-                <p>Participated in a project with Penn State University students (Pennsylvania,
-                    USA).We worked on a robot that would go and harvest plants from a vertical
-                    farming system at Can Agri. </p>
-                <p>2019-2021</p>
-                <small>2019-2021</small>
-            </div>
-            <div class="container">
-                <h3>CTU-Training solutions</h3>
-                <p>Project Management</p>
-                <p>Done the principles of project management. A project was done where I had to manage a team
-                    <br />
-                    and setup a game lodge by making floorplans, websites, graphical designs and a database
-                    <br />
-                    for the lodge. Obtained a certificate of project management
-                </p>
-                <small>2017-2018</small>
-            </div>
-            <div class="container">
-                <h3>Brandwag Highschool</h3>
-                <p>School learner</p>
-                <small>2012-2016</small>
+                <div class="media-body">
+                    <h4 class="m-0">Stefan Ferreira</h4>
+                    <p class="font-weight-light text-muted mb-0">Web developer</p>
+                </div>
             </div>
         </div>
 
-    </div>
+        <ul class="nav flex-column  mb-0">
+            <li class="nav-item">
+                <a href="#About" class="nav-link text-dark font-italic ">
+                    <i class="fa a fa-info mr-3 text-primary fa-fw"></i>
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#Education" class="nav-link text-dark font-italic">
+                    <i class="fa fa-graduation-cap mr-3 text-primary fa-fw"></i>
+                    Education
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#Experience" class="nav-link text-dark font-italic">
+                    <i class="fa fa-book mr-3 text-primary fa-fw"></i>
+                    Experience
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#Badges" class="nav-link text-dark font-italic">
+                    <i class="fa fa-certificate mr-3 text-primary fa-fw"></i>
+                    Badges
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#Projects" class="nav-link text-dark font-italic">
+                    <i class="fa fa-code mr-3 text-primary fa-fw"></i>
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="linkHover" href="Stefan_Ferreira_CV.pdf" download="StefanFerreiraCV" target="_blank"
+                    class="nav-link text-dark font-italic">
+                    <i class="fa fa-file mr-3 text-primary fa-fw"></i>
+                    CV
 
-    <!-- Experience -->
-    <div class="experience center" id="Experience">
-        <h3>Experience</h3>
-        <ul>
-            <li>
-                <small>2019-2021</small>
-                <p>Cricket coach</p>
-                <p>Bedfordview Country Club</p>
+                </a>
+
             </li>
 
-            <li>
-                <small>2022-Current</small>
-                <p>Junior Software Developer</p>
-                <p>Umbani Softawre</p>
-            </li>
+
 
         </ul>
     </div>
+    <!-- End vertical navbar -->
 
-    <!-- Badges -->
-    <div class="Badges center" id="Badges">
 
-        <h3>Badges</h3>
-        <br>
-        <div class="box_wrap">
-            <div class="badgeLogo" data-iframe-width="300" data-iframe-height="270"
-                data-share-badge-id="2108d9b0-868c-4e95-8872-b0233aec10a6"
-                data-share-badge-host="https://www.credly.com"></div>
-            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+    <!-- Page content holder -->
+    <div class="page-content p-2" id="content">
+        <!-- Toggle button -->
+        <button id="sidebarCollapse" type="button"
+            class="btn btn-light bg-dark-subtle rounded-pill shadow-sm px-4 mb-4 position-fixed"><i
+                class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold"></small></button>
 
-        </div>
 
-    </div>
 
-    <!-- Projects -->
-    <div class="projects center" id="Projects">
-        <h3>Projects</h3>
-        <div class="container">
-            <a href="https://github.com/Mafia7902/SEN3X1/tree/DevelopmentBranchV2/PSSLogic" target="_blank">
-                <div>
-                    <h1>Software engineering project</h1>
-                    <p>
-                        A program was made for Premier Software solutions where we had to allow for the employees to
-                        track data of their customers. Managers had the ability to track records of employees. Contracts
-                        can get assigned to the customers. This program was made with C# (windows forms) and TSQL.
-                        We were a group of 5 students with this project.
-                    </p>
+
+
+        <div class="container mt-5 mb-5" id="About">
+            <div class="row no-gutters">
+                <div class="col-md-4 col-lg-4"><img src="images/stefan2.jpg"></div>
+                <div class="col-md-8 col-lg-8">
+
+                    <div class=" justify-content-between align-items-center p-5 bg-dark text-white">
+                        <di class="row">
+                            <h1 class="display-5">Stefan Ferreira</h1>
+
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <a class="icon" href="https://www.facebook.com/stefan.ferreira.9" target="_blank"><i
+                                            class="fab fa-facebook fa-2x"></i></a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icon" href="https://www.linkedin.com/in/stefan-ferreira-1349a2161"
+                                        target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icon" href="https://www.instagram.com/stefferreira14/" target="_blank"><i
+                                            class="fab fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icon" href="https://github.com/Stef98" target="_blank"><i
+                                            class="fab fa-github fa-2x"></i></a>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="icon" href="mailto:stefferreira14@gmail.com" target="_blank"><i
+                                            class="fas fa-envelope fa-2x"></i></a>
+                                </div>
+                            </div>
+                        </di>
+
+
+                    </div>
+                    <div class="p-3 bg-black text-white">
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="d-flex flex-row text-white">
+                        <div class="p-4 bg-info bg-gradient text-center skill-block">
+                            <i class="fa fa-code"></i>
+                            <h4> 75%</h4>
+                            <h6>C#</h6>
+                        </div>
+                        <div class="p-4 bg-primary bg-gradient text-center skill-block">
+                            <i class="fab fa-bootstrap"></i>
+                            <h4> 80%</h4>
+                            <h6>Bootstrap</h6>
+                        </div>
+                        <div class="p-4 bg-success bg-gradient text-center skill-block">
+                            <i class="fab fa-html5"></i>
+                            <h4> 70%</h4>
+                            <h6>HTML</h6>
+                        </div>
+                        <div class="p-4 bg-warning bg-gradient text-center skill-block">
+                            <i class="fas fa-database"></i>
+                            <h4>75%</h4>
+                            <h6>SQL</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row text-white">
+                        <div class="p-4 bg-danger bg-gradient text-center skill-block">
+                            <i class="fab fa-js"></i>
+                            <h4> 75%</h4>
+                            <h6>JavaScript</h6>
+                        </div>
+                        <div class="p-4 bg-dark bg-gradient text-center skill-block">
+                            <i class="fab fa-css3"></i>
+                            <h4> 85%</h4>
+                            <h6>CSS</h6>
+                        </div>
+                        <div class="p-4 bg-info bg-gradient text-lg-center skill-block">
+                            <i class="fa fa-cloud"></i>
+                            <h4> 65%</h4>
+                            <h6>Azure</h6>
+                        </div>
+                        <div class="p-4 bg-primary bg-gradient text-lg-center skill-block">
+                            <i class="fa fa-code-branch"></i>
+                            <h4> 65%</h4>
+                            <h6>Blazor</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row text-white">
+                        <div class="p-4 bg-success bg-gradient text-center skill-block">
+                            <i class="fab fa-github"></i>
+                            <h4> 85%</h4>
+                            <h6>Git</h6>
+                        </div>
+
+                    </div>
                 </div>
-            </a>
-
-            <a href="https://stef98.github.io/recipe_app/" target="_blank">
-                <div>
-                    <h1>Recipe finder</h1>
-                    <p>
-                        Created a REACT app in my spare time to learn more about REACT library and it allows the user to
-                        search for a recipe through an external API.
-                    </p>
-                </div>
-            </a>
-        </div>
-    </div>
 
 
-
-    <!-- Contact -->
-    <div class="contact center" id="Contact">
-        <h3>Contact</h3>
-        <h4>Pleas feel free to contact me!</h4>
-
-        <form action="https://formsubmit.co/stefferreira14@gmail.com" method="POST" class="center" name="myForm">
-            <br><br>
-            <div class="name-forms">
-                <input class="textBox" style="background-color:#1a1c20;" type="text" name="name" id="name"
-                    autocomplete="off" required>
-                <label for="name" class="label-name">
-                    <span class="content-name">Name</span>
-                </label>
-
-            </div> <br>
-            <div class="name-forms">
-                <input type="email" style="background-color:#1a1c20;" name="email" id="email" autocomplete="off"
-                    required>
-                <label for="name" class="label-name">
-                    <span class="content-name">Email</span>
-                </label>
-            </div><br>
-            <div class="name-forms">
-                <input name="textarea" style="background-color:#1a1c20;" id="myText" cols="30" rows="10" required
-                    autocomplete="off">
-                <label for="name" class="label-name">
-                    <span class="content-name">Message</span>
-                </label>
             </div>
-            <input type="hidden" name="_next" value="https://stef98.github.io/WebPortfolio.github.io/">
-            <input type="hidden" name="_captcha" value="false"><br>
-            <button type="submit" onclick="thanks()"><span>SUBMIT</span></button>
-
-        </form>
-
-    </div>
-    <footer class="footer">
-        <div class="footerIcons">
-
-            <a class="icon" href="https://www.facebook.com/stefan.ferreira.9" target="_blank"><i
-                    class="fab fa-facebook-square fa-3x"> </i></a>
-            <a class="icon" href="https://www.linkedin.com/in/stefan-ferreira-1349a2161" target="_blank"><i
-                    class="fab fa-linkedin fa-3x"> </i></a>
-            <a class="icon" href="https://www.instagram.com/stefferreira14/" target="_blank"><i
-                    class="fab fa-instagram-square fa-3x"> </i></a>
-            <a class="icon" href="https://github.com/Stef98" target="_blank"><i class="fab fa-github-square fa-3x">
-                </i></a>
-            <a class="icon" href="mailto:stefferreira14@gmail.com" target="_blank"> <i
-                    class="fas fa-envelope-square fa-3x"> </i></a>
-
-
         </div>
-    </footer>
 
+
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class=" justify-content-between align-items-center text-center  text-white">
+                    <h2 class="display-5" id="Education">Education</h2>
+                    <div class="card shadow-lg bg-info-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;"
+                                    src="images/Belgium campus.png">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="h2 ">Belgium Campus</p>
+                                <p class="h4">Bachelor of Computing</p>
+                                <small class=" text-body-secondary h5">2019-2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg bg-info-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <p class="h2 ">CTU-Training solutions</p>
+                                <p class="h4">Diploma Project Management</p>
+                                <small class="text-body-secondary h5">2017-2018</small>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;" src="images/CTU.png">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg bg-info-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;;"
+                                    src="images/Brandwag.png">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="h2 ">Brandwag Highschool</p>
+                                <p class="h4">School learner</p>
+                                <small class=" text-body-secondary h5">2012-2016</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class=" justify-content-between align-items-center text-center  text-white">
+                    <h2 class="display-5" id="Experience">Experience</h2>
+
+                    <div class="card shadow-lg bg-warning-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;" src="images/Cricket.png">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="h2 ">Cricket coach</p>
+                                <p class="h4">Bedfordview Country Club</p>
+                                <small class=" text-body-secondary h5">2019-2021</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg bg-warning-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+
+                            <div class="col-md-6">
+                                <p class="h2 ">Junior Software Developer</p>
+                                <p class="h4">Umbani Softawre</p>
+                                <small class="text-body-secondary h5">December 2022 - August 2023</small>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;"
+                                    src="images/SoftwareDev.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-lg bg-warning-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;"
+                                    src="images/SoftwareDev2.png">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="h2 ">Junior Software Developer</p>
+                                <p class="h4">SEESA</p>
+                                <small class="text-body-secondary h5">September 2023 - March 2023</small>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card shadow-lg bg-warning-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+
+                            <div class="col-md-6">
+                                <p class="h2 ">Junior Software Developer</p>
+                                <p class="h4">SEESA Softawre Solutions</p>
+                                <small class="text-body-secondary h5">April 2023 - Current</small>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                <img class="img-fluid m-2" style="height: 250px;width: auto;"
+                                    src="images/SoftwareDev3.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class=" justify-content-between align-items-center text-center  text-white">
+                    <h2 class="display-5" id="Badges">Badges</h2>
+                    <div class="card shadow-lg bg-dark-subtle m-3">
+                        <div class="">
+                            <div class="badgeLogo" data-iframe-width="300" data-iframe-height="270"
+                                data-share-badge-id="2108d9b0-868c-4e95-8872-b0233aec10a6"
+                                data-share-badge-host="https://www.credly.com"></div>
+                            <script type="text/javascript" async
+                                src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 mb-5">
+            <div class="row no-gutters">
+                <div class=" justify-content-between align-items-center text-center  text-white">
+                    <h2 class="display-5" id="Projects">Projects</h2>
+
+
+                    <div class="card shadow-lg bg-dark-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+
+
+                            <div class="col-md-6">
+                                <p class="h2 ">Software engineering project</p>
+                                <p class="h5"> A program was made for Premier Software solutions where we had to allow
+                                    for
+                                    the employees to
+                                    track data of their customers. Managers had the ability to track records of
+                                    employees. Contracts
+                                    can get assigned to the customers. This program was made with C# (windows
+                                    forms) and TSQL.
+                                    We were a group of 5 students with this project.</p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <a href="https://github.com/Mafia7902/SEN3X1/tree/DevelopmentBranchV2/PSSLogic"
+                                    target="_blank">
+                                    <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                    <img class="img-fluid m-2" style="height: 250px;width: auto;;"
+                                        src="images/Team.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg bg-dark-subtle mb-3">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-6">
+                                <a href="https://stef98.github.io/Dancor/Index.html" target="_blank">
+
+                                    <!-- col-md-6 will make it take up 6 columns on medium-sized screens and larger -->
+                                    <img class="img-fluid m-2" style="height: 250px;width: auto;;"
+                                        src="images/Dancor.png">
+                                </a>
+                            </div>
+
+
+                            <div class="col-md-6 ">
+                                <p class="h2 ">Dancor Engineering</p>
+                                <p class="h4">Website for Dancor Engineering</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End demo content -->
+</body>
+
+
+</html>
 </body>
 
 </html>
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Ferreira</title>
+    <link href="css/maincss.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/aad34b7c1b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        function thanks() {
+            //form validations...
+            let nameVal = document.forms["myForm"]["name"].value;
+            let emailVal = document.forms["myForm"]["email"].value;
+            let textVal = document.forms["myForm"]["textarea"].value;
+            if (nameVal == "" || emailVal == "" || textVal == "") {
+
+                alert("Pleas fill in text boxes");
+                return false;
+            }
+            else {
+                alert("Thank you for the email!!!");
+            }
+        }
+    </script>
+    <header class="nav center">
+        <div id="logo"><a href="#"><img src="images/logo.png" height="60px" width="190px"></a></div>
+        <input type="checkbox" name="" class="checkBtn" />
+        <ol class="center">
+            <a href="#About">
+                <li>About</li>
+            </a>
+            <a href="#Education">
+                <li>Education</li>
+            </a>
+            <a href="#Experience">
+                <li>Experience</li>
+            </a>
+            <a href="#Badges">
+                <li>Badges</li>
+            </a>
+            <a href="#Projects">
+                <li>Projects</li>
+            </a>
+            <a href="#Contact">
+                <li>Contact</li>
+            </a>
+            <a href="Stefan_Ferreira_CV.pdf" download="StefanFerreiraCV" target="_blank">CV</a>
+
+        </ol>
+
+    </header>
+    <section class="main">
+
+        <div class="box">
+            <h1>Stefan Ferreira</h1>
+            <p>Software Engineering Undergraduate </p><br><br><br><br><br>
+            <i class="fas fa-phone fa-1x"> </i><a href="tel:072 068 4774" class="link" id="phone"> 072 068
+                4774</a><br><br>
+            <i class="fas fa-envelope-open fa-1x"> </i><a href="mailto:stefferreira14@gmail.com" target="_blank"
+                class="link">
+                stefferreira14@gmail.com</a>
+        </div>
+
+        <img src="images/stefan2.jpg" alt="Stefan" id="profilePic">
+
+    </section>
+
+
+    <!-- about -->
+    <div class="about center" id="About">
+        <div class="box_wrap">
+            <p class="heading">About</p>
+            <p class="text">Hello! My name is Stefan Ferreira, and I'm a Software Engineer Undergraduate at Belgium
+                campus. I have a diverse set of skills,
+                ranging from Java, SQL, C#, HTML, CSS and javascript.</p>
+            <p class="text">I speak English and Afrikaans. I am a hard working person
+                and always willing to take on a challange. I love to go and do outdoor activities in my free time. Love
+                to go and play golf and cricket
+                with
+                friends.</p>
+        </div>
+        <div class="box_wrap">
+            <p class="heading">Skills</p>
+            <div class="skills_box"></div>
+            <div class="tooltip"><i class="fab fa-java fa-3x">&nbsp<span class="tooltiptext">Java</span> </i></div>
+            <div class="tooltip"><i class="fas fa-hashtag fa-3x"></i>&nbsp<span class="tooltiptext">C# </i></div>
+            <div class="tooltip"><i class="fab fa-html5 fa-3x">&nbsp<span class="tooltiptext">HTML</span> </i></div>
+            <div class="tooltip"><i class="fab fa-css3-alt fa-3x">&nbsp <span class="tooltiptext">CSS</span></i></div>
+            <div class="tooltip"><i class="fas fa-database fa-3x">&nbsp <span class="tooltiptext">SQL</span></i></div>
+            <div class="tooltip"><i class="fab fa-js fa-3x">&nbsp <span class="tooltiptext">Java Script</span></i></div>
+            <div class="tooltip"><i class="fab fa-node-js fa-3x">&nbsp<span class="tooltiptext">Node JS</span> </i>
+            </div>
+            <div class="tooltip"><i class="fab fa-docker fa-3x">&nbsp<span class="tooltiptext">Docker</span> </i></div>
+            <div class="tooltip"><i class="fab fa-react fa-3x">&nbsp<span class="tooltiptext">React</span> </i></div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- education -->
+    <div class="education center" id="Education">
+        <div class="left_box">
+            <h1 class="heading">Education</h1>
+            <div class="container">
+                <h3>Belgium Campus</h3>
+                <p>Bachelor of Computing</p>
+                <p>Learned programming in C#, Java, SQL, JavaScript, and HTMLS/CSS. Currently
+                    busy
+                    with amazon web services through AWS academy. </p>
+                <p>Participated in a project with Penn State University students (Pennsylvania,
+                    USA).We worked on a robot that would go and harvest plants from a vertical
+                    farming system at Can Agri. </p>
+                <p>2019-2021</p>
+                <small>2019-2021</small>
+            </div>
+            <div class="container">
+                <h3>CTU-Training solutions</h3>
+                <p>Project Management</p>
+                <p>Done the principles of project management. A project was done where I had to manage a team
+                    <br />
+                    and setup a game lodge by making floorplans, websites, graphical designs and a database
+                    <br />
+                    for the lodge. Obtained a certificate of project management
+                </p>
+                <small>2017-2018</small>
+            </div>
+            <div class="container">
+                <h3>Brandwag Highschool</h3>
+                <p>School learner</p>
+                <small>2012-2016</small>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Experience -->
+    <div class="experience center" id="Experience">
+        <h3>Experience</h3>
+        <ul>
+            <li>
+                <small>2019-2021</small>
+                <p>Cricket coach</p>
+                <p>Bedfordview Country Club</p>
+            </li>
+
+            <li>
+                <small>2022-Current</small>
+                <p>Junior Software Developer</p>
+                <p>Umbani Softawre</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Badges -->
+    <div class="Badges center" id="Badges">
+
+        <h3>Badges</h3>
+        <br>
+        <div class="box_wrap">
+            <div class="badgeLogo" data-iframe-width="300" data-iframe-height="270"
+                data-share-badge-id="2108d9b0-868c-4e95-8872-b0233aec10a6"
+                data-share-badge-host="https://www.credly.com"></div>
+            <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+        </div>
+
+    </div>
+
+    <!-- Projects -->
+    <div class="projects center" id="Projects">
+        <h3>Projects</h3>
+        <div class="container">
+            <a href="https://github.com/Mafia7902/SEN3X1/tree/DevelopmentBranchV2/PSSLogic" target="_blank">
+                <div>
+                    <h1>Software engineering project</h1>
+                    <p>
+                        A program was made for Premier Software solutions where we had to allow for the employees to
+                        track data of their customers. Managers had the ability to track records of employees. Contracts
+                        can get assigned to the customers. This program was made with C# (windows forms) and TSQL.
+                        We were a group of 5 students with this project.
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://stef98.github.io/recipe_app/" target="_blank">
+                <div>
+                    <h1>Recipe finder</h1>
+                    <p>
+                        Created a REACT app in my spare time to learn more about REACT library and it allows the user to
+                        search for a recipe through an external API.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- Contact -->
+    <div class="contact center" id="Contact">
+        <h3>Contact</h3>
+        <h4>Pleas feel free to contact me!</h4>
+
+        <form action="https://formsubmit.co/stefferreira14@gmail.com" method="POST" class="center" name="myForm">
+            <br><br>
+            <div class="name-forms">
+                <input class="textBox" style="background-color:#1a1c20;" type="text" name="name" id="name"
+                    autocomplete="off" required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Name</span>
+                </label>
+
+            </div> <br>
+            <div class="name-forms">
+                <input type="email" style="background-color:#1a1c20;" name="email" id="email" autocomplete="off"
+                    required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Email</span>
+                </label>
+            </div><br>
+            <div class="name-forms">
+                <input name="textarea" style="background-color:#1a1c20;" id="myText" cols="30" rows="10" required
+                    autocomplete="off">
+                <label for="name" class="label-name">
+                    <span class="content-name">Message</span>
+                </label>
+            </div>
+            <input type="hidden" name="_next" value="https://stef98.github.io/WebPortfolio.github.io/">
+            <input type="hidden" name="_captcha" value="false"><br>
+            <button type="submit" onclick="thanks()"><span>SUBMIT</span></button>
+
+        </form>
+
+    </div>
+    <footer class="footer">
+        <div class="footerIcons">
+
+            <a class="icon" href="https://www.facebook.com/stefan.ferreira.9" target="_blank"><i
+                    class="fab fa-facebook-square fa-3x"> </i></a>
+            <a class="icon" href="https://www.linkedin.com/in/stefan-ferreira-1349a2161" target="_blank"><i
+                    class="fab fa-linkedin fa-3x"> </i></a>
+            <a class="icon" href="https://www.instagram.com/stefferreira14/" target="_blank"><i
+                    class="fab fa-instagram-square fa-3x"> </i></a>
+            <a class="icon" href="https://github.com/Stef98" target="_blank"><i class="fab fa-github-square fa-3x">
+                </i></a>
+            <a class="icon" href="mailto:stefferreira14@gmail.com" target="_blank"> <i
+                    class="fas fa-envelope-square fa-3x"> </i></a>
+
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
